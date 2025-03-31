@@ -25,10 +25,13 @@ export default function Auth() {
     useEffect(() => {
         if (user) {
             updateUserData();
-            // Only redirect if we're not already on the coach selection page
-            if (!window.location.pathname.includes('/onboarding/coach-selection')) {
-                router.push('/onboarding/coach-selection');
-            }
+            // Get the callback URL from the query parameters
+            const params = new URLSearchParams(window.location.search);
+            const callback = params.get('callback');
+
+            // Redirect to the callback URL if it exists, otherwise go to coach selection
+            const redirectTo = callback || '/onboarding/coach-selection';
+            router.push(redirectTo);
         }
     }, [user, router, updateUserData]);
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 // Stats for the counter section
 const stats = {
@@ -71,12 +72,12 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <a
+          <Link
             href="/onboarding/auth"
             className="inline-block px-10 py-4 text-xl font-medium text-white rounded-full bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 shadow-lg transition-all duration-300"
           >
             Try for free <span className="ml-2">→</span>
-          </a>
+          </Link>
 
           {/* Testimonial avatars and rating */}
           <div className="flex flex-col items-center justify-center mt-8 space-y-3">
