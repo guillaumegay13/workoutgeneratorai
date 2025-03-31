@@ -47,7 +47,7 @@ export default function Preferences() {
                 }
             });
         }
-    }, [days, isInitialized]);
+    }, [days, isInitialized, updateOnboardingData]);
 
     // Update onboarding data when equipment changes
     useEffect(() => {

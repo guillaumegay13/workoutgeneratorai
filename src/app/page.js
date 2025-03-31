@@ -65,7 +65,7 @@ export default function Home() {
         {/* Description text */}
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-lg text-gray-700 mb-12">
-            If you have fitness goals but can't find the right workout plan, let our AI generate
+            If you have fitness goals but can&apos;t find the right workout plan, let our AI generate
             personalized routines for you within seconds. Create the perfect workout based on what you
             need, and get unlimited fitness options.
           </p>

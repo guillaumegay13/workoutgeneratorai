@@ -312,7 +312,7 @@ export default function Chatbot() {
         } finally {
             setIsLoading(false);
         }
-    }, [onboardingData, messages, chatHistory]);
+    }, [onboardingData, messages, chatHistory, router]);
 
     useEffect(() => {
         const initializeChat = async () => {
